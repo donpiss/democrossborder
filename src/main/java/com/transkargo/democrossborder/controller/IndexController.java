@@ -20,4 +20,34 @@ public class IndexController {
 		return "index";
 	}
 
+	@GetMapping("/addmanifest")
+	public String addManifest(Model model) {
+
+		return "pages/manifestform";
+	}
+	
+	
+	@GetMapping("/manageuser")
+	public String manageUser(Model model) {
+
+		return "pages/manageuser";
+	}
+	
+	@GetMapping("/adduser")
+	public String manageUserAdd(Model model) {
+
+		return "pages/manageuserform";
+	}
+	
+	@GetMapping("/manageuseraccess")
+	public String manageUserAccess(Model model) {
+
+		return "pages/manageuseraccess";
+	}
+	
+	@GetMapping("/adduseraccess")
+	public String manageUserAccessAdd(Model model) {
+
+		return "pages/manageuseraccessform";
+	}
 }

@@ -8,7 +8,7 @@
 <meta name="author" content="">
 <!-- <link rel="icon" type="image/png" sizes="16x16"
 	href="../plugins/images/favicon.png"> -->
-<title>Index</title>
+<title>Manage User</title>
 <!-- Bootstrap Core CSS -->
 <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 <!-- Menu CSS -->
@@ -114,7 +114,7 @@
 							<li><a th:href="@{/manageuser}"><i
 									class="ti-comments-smilye fa-fw"></i><span class="hide-menu">Manage
 										User</span></a></li>
-							<li><a th:href="@{/manageuseraccess}"><i
+							<li><a href="chat.html"><i
 									class="ti-comments-smilye fa-fw"></i><span class="hide-menu">Manage
 										User Access</span></a></li>
 							<li><a href="chat.html"><i
@@ -190,19 +190,12 @@
 												</button>
 											</span>
 										</div>
-										<div class="checkbox checkbox-info">
-											<input id="checkbox34" type="checkbox"> <label
-												for="checkbox34">Display All</label>
-										</div>
 									</div>
 									<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
 										<div class="pull-right">
-											<a th:href="@{/addmanifest}"
+											<a th:href="@{/adduseraccess}"
 												class="fcbtn btn waves-effect waves-light btn-info btn-1b">Add
-												Manifest</a>
-											<button
-												class="fcbtn btn waves-effect waves-light btn-info btn-1b">Upload
-												Shopee Template</button>
+												User Access</a>
 										</div>
 									</div>
 								</form>
@@ -213,130 +206,30 @@
 								<table class="table table-hover">
 									<thead>
 										<tr>
-											<th>MAWB</th>
-											<th>Tgl MAWB</th>
-											<th>BC11</th>
-											<th>Tgl BC11</th>
-											<th>POS</th>
-											<th>Flight No</th>
-											<th>Flight Name</th>
-											<th>Arrival Date</th>
-											<th>Arrival Time</th>
-											<th>Total AWB</th>
-											<th>Total Weight</th>
-											<th>Total Pieces</th>
-											<th>Update Time</th>
+											<th>Access Level ID</th>
+											<th>Access Name</th>
+											<th>Access Menu</th>
 											<th>Action</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td>61856883201</td>
-											<td>2018-05-24</td>
-											<td>023299</td>
-											<td>2018-05-25</td>
-											<td>0023</td>
-											<td>SQ952</td>
-											<td>SINGAPORE AIRLINE</td>
-											<td>2018-05-25</td>
-											<td>00:00:00</td>
 											<td>1</td>
-											<td>978.00</td>
-											<td>2</td>
-											<td>2018-05-26 16:07:57</td>
+											<td>Adminstrator</td>
 											<td>
 												<div class="input-group-btn">
 													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-list"></i>
-													</button>
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-edit"></i>
-													</button>
-													<button class="btn btn-info btn-outline btn-md m-r-5">
 														<i class="fa fa-times"></i>
-													</button>
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-download"></i>
-													</button>
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-file-excel-o"></i>
-													</button>
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-file-pdf-o"></i>
 													</button>
 												</div>
 											</td>
-										</tr>
-										<tr>
-											<td>61856883201</td>
-											<td>2018-05-24</td>
-											<td>023299</td>
-											<td>2018-05-25</td>
-											<td>0023</td>
-											<td>SQ952</td>
-											<td>SINGAPORE AIRLINE</td>
-											<td>2018-05-25</td>
-											<td>00:00:00</td>
-											<td>1</td>
-											<td>978.00</td>
-											<td>2</td>
-											<td>2018-05-26 16:07:57</td>
 											<td>
 												<div class="input-group-btn">
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-list"></i>
-													</button>
 													<button class="btn btn-info btn-outline btn-md m-r-5">
 														<i class="fa fa-edit"></i>
 													</button>
 													<button class="btn btn-info btn-outline btn-md m-r-5">
 														<i class="fa fa-times"></i>
-													</button>
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-download"></i>
-													</button>
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-file-excel-o"></i>
-													</button>
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-file-pdf-o"></i>
-													</button>
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<td>61856883201</td>
-											<td>2018-05-24</td>
-											<td>023299</td>
-											<td>2018-05-25</td>
-											<td>0023</td>
-											<td>SQ952</td>
-											<td>SINGAPORE AIRLINE</td>
-											<td>2018-05-25</td>
-											<td>00:00:00</td>
-											<td>1</td>
-											<td>978.00</td>
-											<td>2</td>
-											<td>2018-05-26 16:07:57</td>
-											<td>
-												<div class="input-group-btn">
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-list"></i>
-													</button>
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-edit"></i>
-													</button>
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-times"></i>
-													</button>
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-download"></i>
-													</button>
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-file-excel-o"></i>
-													</button>
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-file-pdf-o"></i>
 													</button>
 												</div>
 											</td>

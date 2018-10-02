@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,8 @@
 <meta name="author" content="">
 <!-- <link rel="icon" type="image/png" sizes="16x16"
 	href="../plugins/images/favicon.png"> -->
-<title>Index</title>
+<title>Ample Admin Template - The Ultimate Multipurpose admin
+	template</title>
 <!-- Bootstrap Core CSS -->
 <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 <!-- Menu CSS -->
@@ -46,31 +48,25 @@
 		<nav class="navbar navbar-default navbar-static-top m-b-0">
 			<div class="navbar-header">
 				<div class="top-left-part">
-					<!-- 					<a class="logo" href="index.html"> Logo icon image, you can use font-icon also
-						<b> This is dark logo icon <img
-							src="image/admin-logo.png" alt="home" class="dark-logo" /> This is light logo icon
+					<!--  Logo -->
+					<a class="logo" href="index.html"> <!-- Logo icon image, you can use font-icon also -->
+						<b> <!--This is dark logo icon --> <img
+							src="image/admin-logo.png" alt="home" class="dark-logo" /> <!-- This is light logo icon -->
 							<img src="image/admin-logo-dark.png" alt="home"
 							class="light-logo" />
-					</b> Logo text image you can use text also <span
-						class="hidden-xs"> This is dark logo text <img
-							src="image/admin-text.png" alt="home" class="dark-logo" /> This is light logo text
+					</b> <!-- Logo text image you can use text also--> <span
+						class="hidden-xs"> <!-- This is dark logo text --> <img
+							src="image/admin-text.png" alt="home" class="dark-logo" /> <!-- This is light logo text -->
 							<img src="image/admin-text-dark.png" alt="home"
 							class="light-logo" />
 					</span>
-					</a> -->
+					</a>
 				</div>
+				<!-- /Logo -->
 				<ul class="nav navbar-top-links navbar-left">
 					<li><a href="javascript:void(0)"
 						class="open-close waves-effect waves-light"> <i
 							class="glyphicon glyphicon-menu-hamburger"></i>
-					</a></li>
-					<li><a class="logo" href="index.html"> <!-- Logo icon image, you can use font-icon also -->
-							<b> <!--This is dark logo icon --> <img
-								src="image/admin-logo.png" alt="home" class="dark-logo" />
-						</b> <!-- Logo text image you can use text also--> <span
-							class="hidden-xs"> <!-- This is dark logo text --> <img
-								src="image/admin-text.png" alt="home" class="dark-logo" />
-						</span>
 					</a></li>
 				</ul>
 				<ul class="nav navbar-top-links navbar-right pull-right">
@@ -111,10 +107,10 @@
 							<li><a href="chat.html"><i
 									class="ti-comments-smilye fa-fw"></i><span class="hide-menu">Manage
 										Module</span></a></li>
-							<li><a th:href="@{/manageuser}"><i
+							<li><a href="chat.html"><i
 									class="ti-comments-smilye fa-fw"></i><span class="hide-menu">Manage
 										User</span></a></li>
-							<li><a th:href="@{/manageuseraccess}"><i
+							<li><a href="chat.html"><i
 									class="ti-comments-smilye fa-fw"></i><span class="hide-menu">Manage
 										User Access</span></a></li>
 							<li><a href="chat.html"><i
@@ -178,177 +174,45 @@
 					<div class="col-sm-12">
 						<div class="white-box">
 							<div class="row">
-								<form class="form-inline">
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-										<div class="input-group">
-											<input type="text" class="form-control"
-												placeholder="Search Here"> <span
-												class="input-group-btn">
-												<button type="button"
-													class="btn waves-effect waves-light btn-info">
-													<i class="fa fa-search"></i>
-												</button>
-											</span>
+								<div class="col-sm-12 col-xs-12">
+									<form>
+										<div class="form-group col-lg-6">
+											<label>Username</label> <input type="text"
+												placeholder="Enter Username" class="form-control">
 										</div>
-										<div class="checkbox checkbox-info">
-											<input id="checkbox34" type="checkbox"> <label
-												for="checkbox34">Display All</label>
+										<div class="form-group col-lg-6">
+											<label>Full Name</label> <input type="text"
+												placeholder="Enter Full Name" class="form-control">
 										</div>
-									</div>
-									<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
-										<div class="pull-right">
-											<a th:href="@{/addmanifest}"
-												class="fcbtn btn waves-effect waves-light btn-info btn-1b">Add
-												Manifest</a>
-											<button
-												class="fcbtn btn waves-effect waves-light btn-info btn-1b">Upload
-												Shopee Template</button>
+										<div class="form-group col-lg-6">
+											<label>Access Level</label> <select class="form-control"
+												data-placeholder="Select Access Level" tabindex="1">
+												<option value="Administrator">Administrator</option>
+												<option value="Manager">Manager</option>
+												<option value="Staff">Staff</option>
+												<option value="Guest">Guest</option>
+											</select>
 										</div>
-									</div>
-								</form>
-							</div>
-							<br />
-							<p class="text-muted">Total : 1 | Page : 1 of 1</p>
-							<div class="table-responsive">
-								<table class="table table-hover">
-									<thead>
-										<tr>
-											<th>MAWB</th>
-											<th>Tgl MAWB</th>
-											<th>BC11</th>
-											<th>Tgl BC11</th>
-											<th>POS</th>
-											<th>Flight No</th>
-											<th>Flight Name</th>
-											<th>Arrival Date</th>
-											<th>Arrival Time</th>
-											<th>Total AWB</th>
-											<th>Total Weight</th>
-											<th>Total Pieces</th>
-											<th>Update Time</th>
-											<th>Action</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>61856883201</td>
-											<td>2018-05-24</td>
-											<td>023299</td>
-											<td>2018-05-25</td>
-											<td>0023</td>
-											<td>SQ952</td>
-											<td>SINGAPORE AIRLINE</td>
-											<td>2018-05-25</td>
-											<td>00:00:00</td>
-											<td>1</td>
-											<td>978.00</td>
-											<td>2</td>
-											<td>2018-05-26 16:07:57</td>
-											<td>
+										<div class="form-group">
+											<div class="col-sm-12">
 												<div class="input-group-btn">
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-list"></i>
-													</button>
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-edit"></i>
-													</button>
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-times"></i>
-													</button>
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-download"></i>
-													</button>
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-file-excel-o"></i>
-													</button>
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-file-pdf-o"></i>
-													</button>
+													<button class="btn btn-success btn-md m-r-5">Save</button>
+													<button class="btn btn-success btn-md m-r-5">Cancel</button>
 												</div>
-											</td>
-										</tr>
-										<tr>
-											<td>61856883201</td>
-											<td>2018-05-24</td>
-											<td>023299</td>
-											<td>2018-05-25</td>
-											<td>0023</td>
-											<td>SQ952</td>
-											<td>SINGAPORE AIRLINE</td>
-											<td>2018-05-25</td>
-											<td>00:00:00</td>
-											<td>1</td>
-											<td>978.00</td>
-											<td>2</td>
-											<td>2018-05-26 16:07:57</td>
-											<td>
-												<div class="input-group-btn">
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-list"></i>
-													</button>
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-edit"></i>
-													</button>
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-times"></i>
-													</button>
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-download"></i>
-													</button>
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-file-excel-o"></i>
-													</button>
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-file-pdf-o"></i>
-													</button>
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<td>61856883201</td>
-											<td>2018-05-24</td>
-											<td>023299</td>
-											<td>2018-05-25</td>
-											<td>0023</td>
-											<td>SQ952</td>
-											<td>SINGAPORE AIRLINE</td>
-											<td>2018-05-25</td>
-											<td>00:00:00</td>
-											<td>1</td>
-											<td>978.00</td>
-											<td>2</td>
-											<td>2018-05-26 16:07:57</td>
-											<td>
-												<div class="input-group-btn">
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-list"></i>
-													</button>
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-edit"></i>
-													</button>
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-times"></i>
-													</button>
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-download"></i>
-													</button>
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-file-excel-o"></i>
-													</button>
-													<button class="btn btn-info btn-outline btn-md m-r-5">
-														<i class="fa fa-file-pdf-o"></i>
-													</button>
-												</div>
-											</td>
-										</tr>
-									</tbody>
-								</table>
+											</div>
+										</div>
+									</form>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<!-- /.row -->
 			</div>
+			<!-- /.container-fluid -->
+			<!--             <footer class="footer text-center"> 2017 &copy; Ample Admin brought to you by wrappixel.com</footer> -->
 		</div>
+		<!-- /#page-wrapper -->
 	</div>
 	<!-- /#wrapper -->
 	<!-- jQuery -->
